@@ -75,7 +75,7 @@ nav
 
 .img
 {
-    background: url('/home/omar-v/kazuto/web_camp-main/daily_tasks/day_5/images/ColorWall-ogd5l5.png') no-repeat center center;
+    background: url('images/ColorWall-ogd5l5.png') no-repeat center center;
     background-size: cover;
     position: relative;
     overflow: hidden;
