@@ -1,0 +1,304 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    
+    .profile
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        width: 700px;
+        box-shadow: 0px 0px 5px black;
+        border-radius: 15px;
+        justify-content: start;
+        gap: 20px;
+        transition: all 0.5s;
+        
+        .input_1
+        {
+            height: 2   0px;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid black;
+            transition: all 0.5s;
+
+        }
+        .input_1:hover
+        {
+            box-shadow: 0px 0px 4px rgb(139, 139, 139);
+            transform: scale(1.02);
+        }
+
+        button
+        {
+            align-self: center;
+            width: 100px;
+            height: 40px;
+            background-color: rgb(48, 138, 255);
+            border: none;
+            border-radius: 5px;
+            color: white;transition: all 0.5s;
+        }
+        button:hover
+        {
+            border: 1px solid rgb(48, 138, 255);
+            background-color: white;
+            color: rgb(48, 138, 255);
+        }
+    }
+
+    .profile:hover
+    {
+        transform: scale(1.02);
+    }
+}
+
+
+.result
+{
+    margin: 15px;
+    width: 600px;
+    background-color: rgb(139, 139, 139);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 2px rgb(139, 139, 139);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    transition: all 0.5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+.result:hover
+{
+    box-shadow: 0px 0px 4px rgb(139, 139, 139);
+    transform: scale(1.02);
+}
+
+
+
+
+.shopping
+{
+    display: flex;
+        flex-direction: column;
+        padding: 30px;
+        width: 700px;
+        box-shadow: 0px 0px 5px black;
+        border-radius: 15px;
+        justify-content: start;
+        gap: 20px;
+        transition: all 0.5s;
+        
+        button
+        {
+            align-self: center;
+            width: 100px;
+            height: 40px;
+            background-color: rgb(51, 209, 90);
+            border: none;
+            border-radius: 5px;
+            color: white;transition: all 0.5s;
+        }
+        button:hover
+        {
+            border: 1px solid #33d15a;
+            background-color: white;
+            color: rgb(51, 209, 90);
+        }
+}
+.shopping:hover
+    {
+        transform: scale(1.02);
+    }
+
+
+    .result_1
+    {
+        margin: 15px;
+        width: 600px;
+        background-color: rgb(139, 139, 139);
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 2px rgb(139, 139, 139);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        transition: all 0.5s;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 17px;
+    }
+    .result_1:hover
+    {
+        box-shadow: 0px 0px 4px rgb(139, 139, 139);
+        transform: scale(1.02);
+    }
+
+
+
+    .age
+{
+    display: flex;
+        flex-direction: column;
+        padding: 30px;
+        width: 700px;
+        box-shadow: 0px 0px 5px black;
+        border-radius: 15px;
+        justify-content: start;
+        gap: 20px;
+        transition: all 0.5s;
+        
+        button
+        {
+            align-self: center;
+            width: 100px;
+            height: 40px;
+            background-color: rgb(120, 51, 209);
+            border: none;
+            border-radius: 5px;
+            color: white;transition: all 0.5s;
+            margin-left: 20px;
+        }
+        button:hover
+        {
+            border: 1px solid rgb(120, 51, 209);
+            background-color: white;
+            color: rgb(120, 51, 209);
+        }
+
+        input
+        {
+            width: 300px;
+            height: 2   0px;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid black;
+            transition: all 0.5s;
+
+        }
+        input:hover
+        {
+            box-shadow: 0px 0px 4px rgb(139, 139, 139);
+            transform: scale(1.02);
+        }
+}
+.age:hover
+    {
+        transform: scale(1.02);
+    }
+
+
+
+    .list
+{
+    display: flex;
+        flex-direction: column;
+        padding: 30px;
+        width: 700px;
+        box-shadow: 0px 0px 5px black;
+        border-radius: 15px;
+        justify-content: start;
+        gap: 20px;
+        transition: all 0.5s;
+        
+        button
+        {
+            align-self: center;
+            width: 100px;
+            height: 40px;
+            background-color: rgb(51, 209, 196);
+            border: none;
+            border-radius: 5px;
+            color: white;transition: all 0.5s;
+            margin-left: 20px;
+        }
+        button:hover
+        {
+            border: 1px solid rgb(51, 209, 196);
+            background-color: white;
+            color: rgb(51, 209, 196);
+        }
+
+        input
+        {
+            width: 300px;
+            height: 2   0px;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid black;
+            transition: all 0.5s;
+
+        }
+        input:hover
+        {
+            box-shadow: 0px 0px 4px rgb(139, 139, 139);
+            transform: scale(1.02);
+        }
+}
+.list:hover
+    {
+        transform: scale(1.02);
+    }
+
+.list_1
+{
+    display: flex;
+    align-items: center;
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 5px;
+    height: 25px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    transition: all 0.5s;
+}
+
+.list_1:hover
+{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 4px rgb(139, 139, 139);
+}
+
+
+.dark
+{
+    display: flex;
+        flex-direction: column;
+        padding: 30px;
+        width: 700px;
+        box-shadow: 0px 0px 5px black;
+        border-radius: 15px;
+        justify-content: start;
+        gap: 20px;
+        transition: all 0.5s;
+        
+        button
+        {
+            align-self: center; 
+            width: 100px;
+            height: 40px;
+            background-color: rgb(36, 36, 36);
+            border: none;
+            border-radius: 5px;
+            color: white;transition: all 0.5s;
+        }
+        button:hover
+        {
+            border: 1px solid rgb(36, 36, 36);
+            background-color: white;
+            color: rgb(36, 36, 36);
+        }
+}
+
+.dark:hover
+    {
+        transform: scale(1.02);
+    }

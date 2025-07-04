@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task_1.css">
+</head>
+<body style="background-color: rgb(236, 236, 236);">
+
+<!-- /* ================================================================================================ */ -->
+
+    <div class="div_0">
+        <nav class="nav_0">
+            <h3 href="#">OUR TEAM</h3>
+            <ul class="ul">
+                <a href="#"><li><button>Home</button></li></a>
+                <a href="#"><li><button>Team</button></li></a>
+                <a href="#"><li><button>Stats</button></li></a>
+                <a href="#"><li><button>Contacts</button></li></a>
+            </ul>
+        </nav>
+    </div>
+
+<!-- /* ================================================================================================ */ -->
+
+    <div class="div_1">
+        <h1>Our Professional Team</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non voluptates illum fugiat vel maiores, similique praesentium ipsa. <br> Labore dolores vero eligendi id nobis ut? Nisi eos nulla libero veritatis vitae.</p>
+    </div>
+
+<!-- /* ================================================================================================ */ -->
+
+    <h1>Team Members</h1>
+    <div class="div_cards">
+        <div class="card" id="new_card">
+
+            <!-- <div>
+                <img src="images/pic.png" alt="no image">
+                <div>
+                    <h4>omar ali</h4>
+                    <h4 class="h">web dev</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore omnis, at dolorum veritatis ad autem neque consequatur officiis commodi qui suscipit dolorem odit, eaque velit laboriosam! Aspernatur architecto odit rem?</p>
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>js</li>
+                        <li>react</li>
+                    </ul>
+                    <button class="button_1">View Profile</button>
+                    <button class="button_2">Contacts</button>
+                </div>
+            </div>
+
+            <div>
+                <img src="images/pic.png" alt="no image">
+                <div>
+                    <h4>omar ali</h4>
+                    <h4 class="h">web dev</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore omnis, at dolorum veritatis ad autem neque consequatur officiis commodi qui suscipit dolorem odit, eaque velit laboriosam! Aspernatur architecto odit rem?</p>
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>js</li>
+                        <li>react</li>
+                    </ul>
+                    <button class="button_1">View Profile</button>
+                    <button class="button_2">Contacts</button>
+                </div>
+            </div>
+
+
+            <div>
+                <img src="images/pic.png" alt="no image">
+                <div>
+                    <h4>omar ali</h4>
+                    <h4 class="h">web dev</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore omnis, at dolorum veritatis ad autem neque consequatur officiis commodi qui suscipit dolorem odit, eaque velit laboriosam! Aspernatur architecto odit rem?</p>
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>js</li>
+                        <li>react</li>
+                    </ul>
+                    <button class="button_1">View Profile</button>
+                    <button class="button_2">Contacts</button>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="add" onclick="div_overly()">add card</button>
+        <button class="remove" onclick="removeAllCards()">remove card</button>
+    </div>
+
+<!-- /* ================================================================================================ */ -->
+
+    <div class="div_3">
+        <h3>Our Team Stats</h3>
+        <ul class="ul_1">
+            <li>15+</li>
+            <li>50+</li>
+            <li>100%</li>
+            <li>10+</li>
+        </ul>
+        <ul class="ul_2">
+            <li>combind years of experience</li>
+            <li>completed projects</li>
+            <li>client satisfaction</li>
+            <li>mastered technologies</li>
+        </ul>
+    </div>
+
+<!-- /* ================================================================================================ */ -->
+
+    <footer>
+        <p>Our Team. all rights reserved.</p>
+    </footer>
+
+<!-- /* ================================================================================================ */ -->
+
+</body>
+</html>
+
+
+
+
+<script>
+    function div_overly()
+    {  
+        var div = document.createElement("div");
+        div.classList.add("overly");
+
+        div.innerHTML = 
+        `
+        <div class="card_creat" >
+            <h2>creat a new card</h2>
+            <input type="text" placeholder="name" id="name">
+            <input type="text" placeholder="jop title" id="jop">
+            <div>
+                <input type="text" placeholder="skill" id="new_skill">
+                <button onclick="skill()">add</button>
+            </div>
+            <ul class="list"></ul>
+            <button class="b_1" onclick="done()">done</button>
+        </div>
+        `
+        document.body.appendChild(div);
+    }
+
+    function done() 
+    {
+    var name = document.getElementById("name").value;
+    var jop = document.getElementById("jop").value;
+    var card = document.createElement("div");
+
+    card.innerHTML = 
+    `
+        <img src="images/pic.png" alt="no image">
+        <div>
+            <h4>${name} </h4>
+            <h4 class="h">${jop}</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore omnis, at dolorum veritatis ad autem neque consequatur officiis commodi qui suscipit dolorem odit, eaque velit laboriosam! Aspernatur architecto odit rem?</p>
+            <ul class="card_list">
+            </ul>
+            <button class="button_1">View Profile</button>
+            <button class="button_2">Contacts</button>
+        </div>
+    `;
+
+    var new_card = document.getElementById("new_card");
+    new_card.appendChild(card);
+
+    document.querySelector(".overly").remove();
+    }
+
+    function skill() 
+    {
+        var li = document.createElement("li");
+        var value = document.getElementById("new_skill").value;
+
+        li.innerText = value;
+        document.querySelector(".list").appendChild(li);
+    }
+
+    function removeAllCards() {
+        document.getElementById("new_card").innerHTML = "";
+    }
+
+</script>
+
+

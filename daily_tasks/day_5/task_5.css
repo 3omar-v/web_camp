@@ -1,0 +1,241 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+nav
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 0px 5px rgba(83, 83, 83, 0.288);
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+
+    ul
+    {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        li
+        {
+            cursor: pointer;
+            transition: all 0.5s;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        li:hover
+        {
+            background-color: rgba(184, 184, 184, 0.39);
+        }
+    }
+
+    .nav_left
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: rgb(0, 136, 255);
+        cursor: pointer;
+    }
+
+    button
+    {
+        height: 35px;
+        width: 80px;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        background: linear-gradient(120deg, #3498db 60%, #502ecc);
+        transition: all 0.5s;
+        cursor: pointer;
+        background-size: 200%;
+    }
+
+    button:hover
+    {
+        background-position: right;
+        border-radius: 5px;
+    }
+}
+
+
+/* ================================================================================================== */
+
+
+.img
+{
+    background: url('/home/omar-v/Downloads/ColorWall/ColorWall-ogd5l5.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    gap: 30px;
+
+    img
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    div
+    {
+        z-index: 2;
+    }
+
+    .div_0
+    {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        height: 250px;
+        width: 450px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px); 
+        background-color: rgba(255, 255, 255, 0.1); 
+        padding: 20px;
+        border-radius: 30px;
+        color: white;
+
+        .div_0_1
+        {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            button
+            {
+                width: 200px;
+                height: 50px;
+                border: none;
+                border-radius: 10px;
+            }
+
+            .b1
+            {
+                color: #3498db;
+                background: linear-gradient(120deg, white 20%, #3498db, rgb(255, 70, 255));
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px); 
+                background-size: 200%;
+                transition: all 0.5s;
+            }
+            .b1:hover
+            {
+                background-position: right;
+                color: white;
+                transform: scale(1.02);
+            }
+
+            .b2
+            {
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px); 
+                background:linear-gradient(120deg, rgba(0, 0, 0, 0), rgba(255, 116, 139, 0.329),rgba(121, 190, 255, 0.616));
+                color: white;
+                background-size: 200%;
+                transition: all 0.5s;
+            }
+            .b2:hover
+            {
+                transform: scale(1.02);
+                background-position: right;
+            }
+        }
+    }
+
+    .div_1
+    {
+        display: flex;
+        gap: 20px;
+        color: white;
+        
+        div
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            background: linear-gradient(120deg, rgb(250, 109, 255), rgba(0, 60, 255, 0.61));
+            
+            background-size: 200%;
+            transition: all 0.5s;
+        }
+        div:hover
+        {
+            transform: scale(1.02);
+            background-position: right;
+            transform: scale(1.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); 
+        }
+    }
+}
+
+
+/* ================================================================================================== */
+
+
+.choose_us
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: #a634db1a;
+    height: 500px;
+
+    .choose_top
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        transition: all 0.5s;
+        gap: 10px;
+
+        div
+        {
+            height: 5px;
+            width: 60px;
+            border-radius: 2.5px;
+            background: linear-gradient(120deg, rgb(24, 24, 211), rgb(255, 0, 157) );
+            transition: all 0.5s;
+            background-size: 200%;
+        }
+    }
+    .choose_top:hover
+    {
+        div
+        {
+            width: 100px;
+            background-position: right;
+        }
+    }
+}

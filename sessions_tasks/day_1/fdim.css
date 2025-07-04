@@ -1,0 +1,81 @@
+.div_1
+{
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 30px;
+    align-content: center;
+    box-shadow: 10px 10px 50px black;
+    display: inline-block;
+}
+
+
+.img
+{
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+
+.h1_1
+{
+    color:slategray;
+    text-align: center;
+}
+
+.button_1
+{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, rgb(177, 5, 86),rgb(11, 234, 219));
+    transition: all 0.35s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button_1:hover
+{
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, rgb(177, 5, 86),rgb(10, 224, 213));
+}
+
+.div_1 div
+{
+    text-align: center;
+    padding: 20px;
+}
+
+.table 
+{
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    th
+    {
+        border-bottom: 2px black solid;
+        padding: 10px;
+        background-color: rgb(60, 163, 163);
+    }
+    tbody
+    {
+        border-bottom: 2px solid black;
+        td
+        {
+            border-bottom: 2px solid black;
+            padding: 10px;
+        }
+    }    
+}
+
+.div_main
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 1000px;
+}

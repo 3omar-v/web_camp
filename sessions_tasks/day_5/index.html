@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day_5.css">
+</head>
+<body>
+    <div>
+        <h1>Javascrip Application</h1>
+        <div id="by_id" class="scale">
+            <p>get by id</p>
+        </div>
+
+        <div class="div_1" class="scale">
+            <p>get by class name</p>
+        </div>
+
+        <div class="scale">
+            <p>get by tag</p>
+        </div>
+
+        <div class="div_query" class="scale">
+            <p>query selector</p>
+        </div>
+
+        <div class="div_query" class="scale">
+            <p>query selector all</p>
+        </div>
+
+        <div class="buttons">
+            <button class="id" onclick="get_id()">get by id</button>
+            <button class="class" onclick="get_class()">    class name</button>
+            <button class="tag" onclick="get_tag()">get by tag</button>
+            <button class="query" onclick="query()">query selector</button>
+            <button class="query_all" onclick="query_all()">selector all</button>
+        </div>
+    </div>
+
+    <div class="link">
+        <h1>Javascrip DOM Manipulation</h1>
+        <div class="link_1">
+            <a id="link" href="google.com">google</a>
+        </div>
+        
+        <div class="div_0">
+            <button class="change" onclick="change_link()">change link</button>
+            <button class="get" onclick="get_link()">get link</button>
+            <button class="remove" onclick="remove()">remove link</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script>
+    function get_id()
+    {
+        var id = document.getElementById("by_id");
+        id.style.backgroundColor = "#0077ff";
+        id.style.color = "white";
+        id.style.transition = "all 0.5s";
+    }
+
+    function get_class()
+    {
+        var get_class = document.getElementsByClassName("div_1");
+        get_class[0].style.backgroundColor = "red";
+        get_class[0].style.color = "white";
+        get_class[0].style.transition = "all 0.5s";
+    }
+
+    function get_tag()
+    {
+        var tag = document.getElementsByTagName("div")
+        tag[3].style.backgroundColor = "#ffae00";
+        tag[3].style.color = "white";
+        tag[3].style.transition = "all 0.5s";
+    }
+
+    function query()
+    {
+        var query = document.querySelector(".div_query");
+        query.style.backgroundColor = "#a200ff";
+        query.style.color = "white";
+        query.style.transition = "all 0.5s";
+    }
+
+    function query_all()
+    {
+        var query_all = document.querySelectorAll(".div_query");
+        query_all[1].style.backgroundColor = "#3acfda";
+        query_all[1].style.transition = "all 0.5s";
+        query_all[1].style.color = "white";
+    }
+
+    function change_link()
+    {
+        var link = document.getElementById("link");
+        link.href = "facebook.com";
+        link.innerText = "facebook";
+    }
+
+    function get_link()
+    {
+        alert(link.innerText);
+        alert(link.href);
+    }
+
+    function remove()
+    {
+        link.innerText = "";
+        link.href= "" ;
+    }
+</script>
